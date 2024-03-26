@@ -2,6 +2,16 @@ package Stack;
 
 import java.util.Stack;
 
+/**
+ * 
+ * @author Nitya
+ * 
+ * Link - https://www.geeksforgeeks.org/problems/stock-span-problem-1587115621/1
+ * 
+ * 
+ *
+ */
+
 public class StockSpanProblem {
 	
 	public static int[] calculateSpan(int[] price,int n) {

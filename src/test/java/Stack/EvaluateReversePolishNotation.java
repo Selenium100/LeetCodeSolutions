@@ -24,10 +24,8 @@ public class EvaluateReversePolishNotation {
 		
 		for(String eachToken: tokens) {
 			if(eachToken.equals("+") || eachToken.equals("-") ||eachToken.equals("*") || eachToken.equals("/")) {
-				int op2 = stack.peek();
-				stack.pop();
-				int op1 = stack.peek();
-				stack.pop();
+				int op2 = stack.pop();
+				int op1 = stack.pop();
 				stack.push(evaluate(op1,op2,eachToken));
 				
 			}else {
