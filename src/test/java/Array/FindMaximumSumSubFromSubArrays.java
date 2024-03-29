@@ -12,7 +12,7 @@ public class FindMaximumSumSubFromSubArrays {
 		}
 		
 		for(int i=0;i<k;i++) {
-			max_sum +=arr[i]; //7
+			max_sum +=arr[i];
 		}
 		
 		int win_sum = max_sum;
@@ -28,7 +28,6 @@ public class FindMaximumSumSubFromSubArrays {
 		
 		int[] arr = {1,4,2,10,2,3,1,0,20};
 		int k = 4;
-		int n = arr.length;
 		
 		System.out.println(findMaxSum(arr, k));
 	}
