@@ -11,10 +11,10 @@ public class RotateArray {
         ArrayList<Integer> list = new ArrayList<Integer>();
 
         for(int i=length-k;i<length;i++){
-            list.add(nums[i]);
+            list.add(nums[i]); //6,7
         }
 
-        for(int i = length-k-1; i>=-0; i--){
+        for(int i = length-k-1; i>=0; i--){
             nums[i+k] = nums[i];
         }
 
