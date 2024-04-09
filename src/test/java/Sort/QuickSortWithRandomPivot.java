@@ -58,11 +58,16 @@ public class QuickSortWithRandomPivot {
 		quickSort(arr,l,id-1);
 		quickSort(arr, id+1, r);
 	}
+	
+	public static int[] sortArray(int[] arr) {
+		quickSort(arr, 0, arr.length-1);
+		return arr;
+	}
 
 	public static void main(String[] args) {
 		
 		int[] arr = {5,1,7,3,9,4,6};
-		quickSort(arr, 0, 6);
+		sortArray(arr);
 		System.out.println(Arrays.toString(arr));
 		
 
